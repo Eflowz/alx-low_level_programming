@@ -1,22 +1,18 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
- * main - Prints all single digits of base 10 followed by new line
+ * main - Prints numbers from 0 to 9.
  *
- * Return: return 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit;
+	int i;
 
-	for (digit = '0'; digit <= '9'; digit++)
-
+	for (i = 48; i < 58; i++)
 	{
-		putchar(digit);
-
+		putchar(i);
 	}
-
-	putchar('\n')
-
-		return (0);
+	putchar('\n');
+	return (0);
 }
