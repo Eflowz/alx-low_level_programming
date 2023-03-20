@@ -1,38 +1,59 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
- * main - Print all single digits with , and space folowed by new line
- *
- * Return: return 0
- *
+ * main - prints all possible combinations of single-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
+	int n;
 
-		int digit;
-
-
-
-		for (digit = '0'; digit <= '9'; digit++)
-
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+		if (n != 57)
 		{
-
-
-			putchar(digit);
-
-			if (digit == '9')
-
-												continue;
-
-
-
-												putchar(',');
-
-												putchar(' ');
-
-											}
-
-		putchar('\n');
-
-		return (0);
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
