@@ -9,9 +9,9 @@
  */
 void print_to_98(int b)
 {
-	if (b >=98)
+	if (b >= 98)
 	{
-		while (b >98)
+		while (b > 98)
 		printf ("%d, ", b--);
 	        printf("%d\n", b);
 	}
