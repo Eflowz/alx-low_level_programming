@@ -22,6 +22,3 @@ void print_to_98(int b)
 		printf("%d\n", b);
 	}
 }
-		
-
-
