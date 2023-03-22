@@ -3,30 +3,29 @@
  * jack_bauer - function that prints minutes, and hour
  * for jack bauer
  * starting from 00:00 to 23:59
- * Return: 0
+ * Return: no return
  */
 void jack_bauer(void)
 {
-	int hours = 0;
-	int minutes = 0;
-	int hours_remainder;
-	int minutes_remainder;
-
-	while (hours <= 23)
+	int a, b, c,d;
+	for (a = 0, a <= 2; a++)
 	{
-	while (minutes <= 59)
-	{
-		minutes_remainder = minutes % 10;
-		hours_remainder = hours % 10;
-		_putchar(hours / 10 + '0');
-		_putchar(hours_remainder + '0');
-	 	_putchar(':');
-		_putchar(minutes / 10 + '0');
-		_putchar(minutes_remainder + '0');
-		minutes++;
-		_putchar('\n');
+		for (b = 0, b <= 9; b++)
+		{
+			for (c = 0, c <= 5; c++)
+			{
+				for (d = 0, d <= 9; d++)
+				{
+					if (a >= 2 && b >= 4)
+						break;
+					-putchar(a + 48);
+					-putchar (b + 48);
+					-putchar(58) ;
+					-putchar(c + 48);
+					-putchar(d + 48);
+					-putchar('\n');
+				}
+			}
+		}
 	}
-	hours++;
-	minutes = 0;
-}
 }
