@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * puts2 - print  string
- * @str: pointer parameter a
+ * @str: pointer parameter 
  * Description: print strings  value
  */
 
@@ -11,7 +11,6 @@ void puts2(char *str)
 	int i, k;
 	int h;
 	i = 0;
-	
 	while (str[i])
 	{
 		i++;
