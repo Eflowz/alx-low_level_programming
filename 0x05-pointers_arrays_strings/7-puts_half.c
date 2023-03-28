@@ -1,38 +1,28 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts_half - print  string
- * @str: pointer parameter a
- * Description: print strings  value
+ * puts_half - prints half of a string
+ * @str: char to check
+ *
+ * Return: 0 is success 
  */
 
-void puts_half(char *str)
+void puts_half(char *str)
 {
-	int i;
-	int h;
-	int lastdigit = 0;
+	int string = 0, n; 
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	if (i % 2 == 0)
-	{
-		lastdigit = i / 2;
-	}
+	while (str[string] != '\0') 
+		string++; 
+	
+	if (string + 1 % 2 != '0')
+		n = (string - 1) / 2;
 	else
-	{
-		lastdigit = ((i - 1) / 2) + 1;
-	}
-	for (h = lastdigit; h <= i - 1; h++)
-	{
-		printf("%c", str[h]);
-		lastdigit -= 1;
-		if (lastdigit == 0)
-		{
-			break;
-		}
-		printf("\n");
-	}
+		n = (string / 2);
+	n++; 
+
+	for (string = n; str[string] != '\0'; string++) 
+		_putchar(str[string]);
+	_putchar('\n');
 }
+
+	
