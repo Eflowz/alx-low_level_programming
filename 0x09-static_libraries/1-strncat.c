@@ -1,8 +1,10 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * _strncat - Concatenates two strings using at most
- * n number of bytes from src.
- * est: The string to be appended upon.
+ *            an inputted number of bytes from src.
+ * @dest: The string to be appended upon.
  * @src: The string to be appended to dest.
  * @n: The number of bytes from src to be appended to dest.
  *
@@ -11,8 +13,8 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i,
-	int j;
+
+	int i, j;
 
 	i = 0;
 	j = 0;
