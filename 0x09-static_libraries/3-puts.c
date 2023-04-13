@@ -1,19 +1,15 @@
 #include "main.h"
 /**
- * _puts - output a string
- * @c: pointer parameter a
- * Description: length  pointer value
- * Return: integer
+ * _puts - prints a string
+ * @str: string to print
+ * Description: prints a string
+ * On Success: return the number of characters printed
  */
-
-void _puts(char *c)
+void _puts(char *str)
 {
+	while (*str)
 
-int i = 0;
+		_putchar(*str++);
 
-for (; c[i] != '\0'; i++)
-{
-_putchar(c[i]);
-}
-_putchar('\n');
+	_putchar('\n');
 }
