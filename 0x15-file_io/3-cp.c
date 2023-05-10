@@ -1,15 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
-
 /**
- * error_file - checks if files can be opened.
- * @file_from: file_from.
- * h@file_to: file_to.
- * @argv: arguments vector.
- * Return: no return.
- */
-
+* error_file - checks if files can be opened.
+* @file_from: file_from.
+* @file_to: file_to.
+* @argv: arguments vector
+* Description: This function checks if the file_from and file_to can be op
+* If either file cannot be opened, an appropriate error message is printed.
+*/
 void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
